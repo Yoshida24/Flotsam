@@ -8,7 +8,7 @@
     observeDom(selector) {
       let target = document.querySelector(selector);
 
-      console.log('start');
+      console.log('prepare to observe.....');
 
       // オブザーバインスタンスを作成
       const observer = new MutationObserver((mutations) => {
@@ -28,7 +28,7 @@
       // 対象ノードとオブザーバの設定を渡す
       observer.observe(target, config);
 
-      //window.open('popup.html');
+      console.log('observe start !!!');
     }
   }
 
