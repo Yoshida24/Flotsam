@@ -2,7 +2,6 @@
   'use strict';
 
   class insertElement {
-
     buildElement() {
       var div = document.createElement('div');
       div.textContent = 'hoge';
@@ -15,7 +14,16 @@
       this.buildElement();
     }
   }
-  const main = new insertElement();
-  main.dispatch();
-  console.log('insertElement');
+
+  class dispacher {
+    run() {
+      const insertElement = new insertElement();
+      insertElement.dispatch();
+      console.log('insertElement');
+    }
+  }
+
+  //const main = new insertElement();
+  //main.dispatcher().dispach();
+
 })();

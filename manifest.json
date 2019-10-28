@@ -16,7 +16,8 @@
             "matches": [ "http://*/*", "https://*/*" ],
             "js": [ 
                 "observeDom.js",
-                "insertElement.js"
+                "insertElement.js",
+                "Request.js"
             ]
         }
     ],
