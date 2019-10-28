@@ -14,7 +14,11 @@
     "content_scripts": [
         {
             "matches": [ "http://*/*", "https://*/*" ],
-            "js": [ "observeDom.js" ]
+            "js": [ 
+                "observeDom.js",
+                "insertElement.js",
+                "Request.js"
+            ]
         }
     ],
     "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
